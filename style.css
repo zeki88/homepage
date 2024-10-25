@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    max-width: 500px;
+    position: relative;
+}
+
+.subtitle {
+    position: absolute;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  bottom: 5%;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.custom-shape-divider-top-1729822203 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1729822203 svg {
+    position: relative;
+    display: block;
+    width: calc(163% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1729822203 .shape-fill {
+    fill: #5F9EA0;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.project-name {
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: x-large;
+    color: rgb(50, 50, 50);
+    margin: 2rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: cadetblue;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.contact-info {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-photo>.photo {
+    width: 100%;
+    height: auto;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    color: rgb(32, 32, 32);
+    font-size: 3rem;
+    align-items: center;
+}
+
+.mail {
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-cards {
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem;
+  gap: 1rem;
+    }
+    .card {
+        width: 28vw;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: row;
+    }
+    .about-info {
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        color: rgb(32, 32, 32);
+        padding: 30px;
+        gap: 20px;
+        background-color: white;
+        height: 70vh;
+    }
+    .about-photo {
+        width: 40vw;
+        height: auto;
+        margin-top: 0px;
+        max-width: 800px;
+    }
+    .subtitle {
+        font-size: 5rem;
+    }
+    .icons {
+        gap: 1.5rem;
+        font-size: 2.7rem;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        font-size: x-large;
+        color: rgb(50, 50, 50);
+    }
+    .title-projects {
+        grid-area: title-projects;
+        justify-self: center;
+        font-size: 5rem;
+    }
+    .project-name {
+        font-size: 2rem;
+    }
+    .project-info {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: cadetblue;
+        gap: 10rem;
+        flex-direction: row;
+    }
+    .contact-info {
+        width: 40rem;
+        font-size: xx-large;
+        gap: 5rem
+    }
+    .contact-photo {
+        width: 850px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1638px) {
+    .about-info {
+        font-size: 2.7rem;
+    }
+}
