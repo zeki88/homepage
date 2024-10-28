@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 4vw;
     padding: 1rem;
 }
 
@@ -160,7 +160,7 @@ a, a:visited {
     }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
     .about {
         display: flex;
         justify-content: center;
@@ -179,9 +179,10 @@ a, a:visited {
         gap: 20px;
         background-color: white;
         height: 70vh;
+        font-size: 2.5vw;
     }
     .about-photo {
-        width: 40vw;
+        width: 60vw;
         height: auto;
         margin-top: 0px;
         max-width: 800px;
@@ -231,14 +232,10 @@ a, a:visited {
         font-size: xx-large;
         gap: 5rem
     }
-    .contact-photo {
-        width: 850px;
-        height: auto;
-    }
 }
 
-@media screen and (min-width: 1638px) {
+@media screen and (min-width: 1424px) {
     .about-info {
-        font-size: 2.7rem;
+        font-size: 2vw;
     }
 }
